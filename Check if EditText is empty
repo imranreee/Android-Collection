@@ -1,8 +1,8 @@
-//Check if EditText is empty
+//Check if EditText is empty or Only blanck Space
 
 
 EditText usernameEditText = (EditText) findViewById(R.id.editUsername);
-sUsername = usernameEditText.getText().toString();
+sUsername = usernameEditText.getText().toString().trim();
 if (sUsername.matches("")) {
     Toast.makeText(this, "You did not enter a username", Toast.LENGTH_SHORT).show();
     return;

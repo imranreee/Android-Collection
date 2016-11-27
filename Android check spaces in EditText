@@ -1,7 +1,0 @@
-//For checking only blanck space in EditText / More than one space in any sentance.
-
-
-if (agrTextView.getText().toString().contains("  ")) {
-     agrTextView.setError("No Spaces Allowed");
-     Toast.makeText(MyActivity.this, "You entered more than one space!", 5000).show();
- }
